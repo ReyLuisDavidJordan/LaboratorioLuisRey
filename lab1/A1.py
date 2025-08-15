@@ -55,3 +55,4 @@ while True:
         print(ejecutar(accion, nombre))
     except ValueError as e:
         print(f"Error: {e}")
+
