@@ -1,0 +1,27 @@
+Módulo: utilidades_numericas.py
+
+API pública:
+suma_segura(a, b): Suma dos números, valida que sean enteros o flotantes. Lanza TypeError si alguno no es numérico.
+
+resta_segura(a, b): Resta dos números, valida que sean enteros o flotantes. Lanza TypeError si alguno no es numérico.
+
+multiplicacion_segura(a, b): Multiplica dos números, valida que sean enteros o flotantes. Lanza TypeError si alguno no es numérico.
+
+division_segura(a, b): Divide a entre b, valida que sean enteros o flotantes. Lanza TypeError si alguno no es numérico y ValueError si b=0.
+
+Propósito del módulo:
+Garantizar operaciones aritméticas seguras con manejo explícito de errores.
+
+Validar que los valores ingresados sean numéricos y manejar casos límite (como división por cero).
+
+Razón para separarlo como módulo independiente:
+- Facilita la reutilización de funciones en distintos programas sin duplicar código.
+- Mejora la organización y legibilidad del proyecto.
+- Permite pruebas unitarias aisladas y mantenimiento más sencillo.
+- Facilita la escalabilidad si se agregan más utilidades numéricas en el futuro.
+
+Caso límite probado:
+- division_segura(5, 0) lanza ValueError con el mensaje "No se puede dividir entre cero."
+
+Referencia oficial:
+- Documentación oficial de Python sobre excepciones y tipos numéricos: https://docs.python.org/3/library/exceptions.html
