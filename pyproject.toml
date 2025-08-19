@@ -1,0 +1,12 @@
+[tool.ruff]
+# Activa el linter y formateo
+line-length = 88
+select = ["E", "F", "W", "I"]  
+fix = true 
+exclude = ["venv", ".venv", "__pycache__"]
+
+[tool.mypy]
+python_version = 3.12
+strict = true 
+files = ["src"]  # directorios a analizar
+exclude = ["venv", ".venv", "__pycache__"]
